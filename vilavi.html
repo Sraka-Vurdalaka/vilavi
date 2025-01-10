@@ -12,7 +12,7 @@
   <section class="slider-section">
     <div class="box-center">
       <section class="slider-container">
-        <div class="slider-section__container" style="background: url('./images/1.jpg');">
+        <div class="slider-section__container section-one">
           <div class="slider-info-container">
             <div class="slider-title">
               Скидка до −20%
@@ -22,36 +22,19 @@
               Выбери оплату частями и получи
               дополнительную скидку на свой заказ
             </div>
-            <div class="button-container">
-              <div class="button-shadow">
-              </div>
-              <div class="button-gradient">
-                <div class="button">Купить сейчас</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="slider-section__container" style="background: url('./images/2.jpg');">
-          <div class="slider-info-container">
-            <div class="slider-title text-wite">
-              Скидка до −20%
-              с Яндекс Сплит
-            </div>
-            <div class="slider-text text-wite">
-              Выбери оплату частями и получи
-              дополнительную скидку на свой заказ
-            </div>
-            <div class="button-container">
-              <div class="button-shadow">
-              </div>
-              <div class="button-gradient">
-                <div class="button">Купить сейчас</div>
+            <div class="button-flexbox-container">
+              <div class="button-container">
+                <div class="button-shadow">
+                </div>
+                <a href="https://github.com/" class="button-gradient">
+                  <div class="button">Купить сейчас</div>
+                </a>
               </div>
 
             </div>
           </div>
         </div>
-        <div class="slider-section__container" style="background: url('./images/3.jpg');">
+        <div class="slider-section__container section-two">
           <div class="slider-info-container">
             <div class="slider-title text-wite">
               Скидка до −20%
@@ -61,12 +44,37 @@
               Выбери оплату частями и получи
               дополнительную скидку на свой заказ
             </div>
-            <div class="button-container">
-              <div class="button-shadow">
+            <div class="button-flexbox-container">
+              <div class="button-container">
+                <div class="button-shadow">
+                </div>
+                <a href="https://github.com/" class="button-gradient">
+                  <div class="button">Купить сейчас</div>
+                </a>
               </div>
-              <div class="button-gradient">
-                <div class="button">Купить сейчас</div>
+
+            </div>
+          </div>
+        </div>
+        <div class="slider-section__container section-three">
+          <div class="slider-info-container">
+            <div class="slider-title text-wite">
+              Скидка до −20%
+              с Яндекс Сплит
+            </div>
+            <div class="slider-text text-wite">
+              Выбери оплату частями и получи
+              дополнительную скидку на свой заказ
+            </div>
+            <div class="button-flexbox-container">
+              <div class="button-container">
+                <div class="button-shadow">
+                </div>
+                <a href="https://github.com/" class="button-gradient">
+                  <div class="button">Купить сейчас</div>
+                </a>
               </div>
+
             </div>
           </div>
         </div>
@@ -77,14 +85,18 @@
   <section class="promote-section">
     <div class="box-center">
       <div class="promote-flexbox-container">
-        <a class="promote-box" style="background: url('./images/11.jpg');">
-          <div class="button-flexbox-container">
+        <a class="promote-box"
+          style="background: url('./images/11.jpg'); background-size: cover; background-position-x: center;">
+          <div class="button-flexbox-container button-promote-section">
+            <div class="mini-button mini-button-empty"></div>
             <div class="big-button">Узнать подробнее</div>
             <div class="mini-button"></div>
           </div>
         </a>
-        <a class="promote-box" style="background: url('./images/12.jpg');">
-          <div class="button-flexbox-container">
+        <a class="promote-box"
+          style="background: url('./images/12.jpg'); background-size: cover; background-position-x: center">
+          <div class="button-flexbox-container button-promote-section">
+            <div class="mini-button mini-button-empty"></div>
             <div class="big-button">Узнать подробнее</div>
             <div class="mini-button"></div>
           </div>
@@ -111,12 +123,12 @@
           </div>
           <div class="button-flexbox-container color-button">
             <div class="big-button">Подробнее о бизнесе</div>
-            <div class="mini-button"></div>
+            <div class="mini-button mini-button-bisness"></div>
           </div>
         </div>
         <div class="bisness-video-box">
-          <video src="./media/video-mini.mp4" poster="./images/video-poster.png" data-video="dream-promo">
-          </video>
+          <img src="./images/video-poster.png" data-video="dream-promo">
+
           <div class="button-video-container">
             <div class="video-button" data-video="dream-promo"></div>
           </div>
@@ -125,7 +137,7 @@
     </div>
   </section>
 
-  <section class="decor-section">
+  <!-- <section class="decor-section">
     <div class="box-center">
       <img src="./images/mist.svg" alt="mist">
       <div class="decor-container">
@@ -146,9 +158,9 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <section class="bisness-section">
+  <!-- <section class="bisness-section">
     <div class="box-center">
       <div class="bisness-flexbox-container">
         <div class="bisness-images-box">
@@ -181,9 +193,9 @@
 
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <section class="decor-section">
+  <!-- <section class="decor-section">
     <div class="box-center">
       <div class="decor-container">
         <div class="decor-title">
@@ -202,8 +214,16 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
+  <!-- <section class="modal-video modal-video-disactive">
+    <div class="video-container">
+      <video loop="" playsinlin="" muted="" controls="">
+        <source type="video/mp4" />
+      </video>
+    </div>
+    <div class="video-close">&#10006;</div>
+  </section> -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script type="text/javascript" src="./js/slick.min.js"></script>
