@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
     $('.slider-container').slick({
         arrows: true,
@@ -13,23 +12,25 @@ $(document).ready(function () {
     });
 });
 
-//~ Запуск видеоплеера Start
-let videoElements = document.querySelectorAll('video');
-let buttonsVideo = document.querySelectorAll('.video-button')
+// модалка с видео начало
+let modalVideo = document.querySelector('.modal-video');
+let videoClose = document.querySelector('.video-close');
+let videoElement = document.querySelector('.modal-video video');
+let videoSource = document.querySelector('.modal-video video source');
+let videoBtn = document.querySelector('.button-video-container');
 
-buttonsVideo.forEach((buttonVideo) => {
-    buttonVideo.addEventListener('click', function () {
-        videoElements.forEach((videoElem) => {
-            if (buttonVideo.dataset.video == videoElem.dataset.video) {
-                if (videoElem.paused) {
-                    videoElem.play();
-                    videoPlay(buttonVideo);
-                } else {
-                    videoElem.pause();
-                    videoPause(buttonVideo);
-                }
-            }
-        })
-    });
-
+videoBtn.addEventListener('click', () => {
+    videoSource.src = `./media/video-mini.mp4`;
+    videoElement.load();
+    modalVideo.classList.add('modal-video-active');
+    modalVideo.classList.remove('modal-video-disactive');
+    videoElement.play();
 });
+
+videoClose.addEventListener('click', () => {
+    modalVideo.classList.add('modal-video-disactive');
+    modalVideo.classList.remove('modal-video-active');
+    videoElement.pause();
+    videoElement.currentTime = 0;
+});
+// модалка с видео конец
